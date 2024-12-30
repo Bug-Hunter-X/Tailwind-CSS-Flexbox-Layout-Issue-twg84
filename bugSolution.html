@@ -1,0 +1,12 @@
+The solution is to add `flex-shrink-0` to the child divs:
+
+```html
+<div class="bg-gray-100 p-4">
+  <div class="flex">
+    <div class="w-1/2 bg-red-500 flex-shrink-0"></div>
+    <div class="w-1/2 bg-blue-500 flex-shrink-0"></div>
+  </div>
+</div>
+```
+
+Adding `flex-shrink-0` ensures that the divs maintain their allocated width and do not collapse.

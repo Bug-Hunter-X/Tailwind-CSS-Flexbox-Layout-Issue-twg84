@@ -1,0 +1,12 @@
+The following Tailwind CSS classes are not applied correctly:
+
+```html
+<div class="bg-gray-100 p-4">
+  <div class="flex">
+    <div class="w-1/2 bg-red-500"></div>
+    <div class="w-1/2 bg-blue-500"></div>
+  </div>
+</div>
+```
+
+The expected output is a container with two equally sized divs, one red and one blue. However, the red div takes up the entire width of the container, while the blue div is not rendered.
